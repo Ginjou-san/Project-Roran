@@ -1,0 +1,4 @@
+/*header links */
+@import "desktop/header.css" screen and (min-width: 960px);
+@import "laptop/header.css" screen and (min-width: 640px) and (max-width: 959px);
+@import "mobile/header.css" screen and (max-width: 639px);

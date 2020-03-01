@@ -1,0 +1,44 @@
+	{% block styles %} 
+	{{ super() }}
+	<link rel="stylesheet" href="css/menu.css"/>
+    {% endblock %}
+	{% block scripts %}
+	 <script src="scripts/menu.js"></script> 
+	{% endblock %}
+	{% block menu %}
+		<div class="menu">
+			<div class="menu_text">
+				<h1>Roran<span>.</span></h1>
+				<nav>
+					<ul>
+						<li><a href="#header">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#services">Services</a></li>
+						<li><a href="#team">Team</a></li>
+						<li><a href="#portfolio">Portfolio</a></li>
+						<li><a href="#contacts">Contact</a> </li>
+					</ul>
+				</nav>	
+			<div class="menu_mobile">
+			<button class="dropbtn"><i class="fa fa-caret-down"><img src="images/hamburger.png"/></i></button>
+				<div class="dropdown-content">
+					<nav>
+					  <li><a href="#header"><b>Home</b></a></li>
+					  <li><a href="#about"><b>About</b></a></li>
+					  <li><a href="#services"><b>Service</b></a></li>
+					  <li><a href="#team"><b>Team</b></a></li>
+					  <li><a href="#portfolio"><b>Portfolio</b></a></li>
+					  <li><a href="#contacts"><b>Contact</b></a></li>
+					</nav>
+				</div>
+			</div>
+					<div class="menu_icon">
+						<a href="#" class="instagram"><img src="images/instagram.png" alt="" /></a>
+						<a href="#" class="pinterest"><img src="images/pinterest.png" alt="" /></a>
+						<a href="#" class="twitter"><img src="images/twitter.png" alt="" /></a>
+						<a href="#" class="facebook"><img src="images/facebook.png" alt="" /></a>
+					</div>
+			</div>
+		</div>
+
+	{% endblock %}

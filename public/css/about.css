@@ -1,0 +1,4 @@
+/*about links */
+@import "desktop/about.css" screen and (min-width: 960px);
+@import "laptop/about.css" screen and (min-width: 640px) and (max-width: 959px);
+@import "mobile/about.css" screen and (max-width: 639px);
