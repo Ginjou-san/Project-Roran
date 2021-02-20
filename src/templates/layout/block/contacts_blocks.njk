@@ -1,0 +1,9 @@
+{% macro contacts_block(image, background, background_2 ) %}
+	<div class="contacts_container__main__location">
+		<div><img src="{{ image }}" width="100%"/> </div>
+		<div>
+			<p>{{ background }}</p>
+			<p>{{ background_2 }}</p>
+		</div>
+	</div>
+{% endmacro %}

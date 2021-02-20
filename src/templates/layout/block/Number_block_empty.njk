@@ -1,0 +1,10 @@
+{% macro about_numbers_block(image, numbers,  text) %}
+	
+	<div class="about_numbers_block">
+			<div class="about_numbers_block__image"><img src="{{ image }}" width="100%"  ></img></div>
+				<div class="about_numbers_text">
+				<h1><strong>{{ numbers }}</strong></h1>	
+						<p>{{ text }}</p>				
+				</div>
+	</div>
+{% endmacro %}

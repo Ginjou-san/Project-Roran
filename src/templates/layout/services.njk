@@ -1,0 +1,35 @@
+{% block styles %}
+	{{ super() }} 
+	<link rel="stylesheet" href="css/services.css" />
+{% endblock %}
+
+	{% block services %}
+		
+	<div class="services" id="services">
+		<div class="services_text">
+			<div class="services_our__serveces">
+				<h1>Our Services</h1>
+				<h2>With Passion & Experience</h2>
+				<div class="services_text__border"></div>
+			</div>
+			
+			<div class="services_content">	
+				{% from "src/templates/layout/block/Services_blocks.njk" import services_block %}
+				{{ services_block('images/services_1.png', 'Dictum tincidunt', 'diam', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.sunt in culpa qui officia deserunt mollit anim id est laborum.') }}
+				{{ services_block('images/services_2.png', 'Dictum tincidunt', 'diam', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.sunt in culpa qui officia deserunt mollit anim id est laborum.') }}
+				{{ services_block('images/services_3.png', 'Dictum tincidunt', 'diam', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.sunt in culpa qui officia deserunt mollit anim id est laborum.') }}
+				{{ services_block('images/services_4.png', 'Dictum tincidunt', 'diam', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.sunt in culpa qui officia deserunt mollit anim id est laborum.') }}
+				{{ services_block('images/services_5.png', 'Dictum tincidunt', 'diam', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.sunt in culpa qui officia deserunt mollit anim id est laborum.') }}
+				{{ services_block('images/services_6.png', 'Dictum tincidunt', 'diam', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.sunt in culpa qui officia deserunt mollit anim id est laborum.') }}
+			</div>
+		</div>
+	</div>
+	<div class="services_quote">
+		<div class="services_quote__text">
+			<h1><img src="images/quote.png">Lorem ipsum dolor sit amet, <strong>consectetur adipisicing</strong> elit, Integer at purus vulputate <strong>vehicula</strong> nisi vitae,lobortis ante. Praesent sodales iaculis  ultricies
+				Vestebulum et <strong> trisique</strong> nisl,sed volutpad ante. </h1> <div class="images_quote"><img src="images/quote.png"/> </div>
+				<div class="services_quote__border"></div>
+				<p>Jonathan Doe</p>
+		</div>
+	</div>
+	{% endblock %}

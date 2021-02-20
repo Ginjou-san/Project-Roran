@@ -1,0 +1,50 @@
+	{% block styles %}
+	{{ super() }}
+	<link rel="stylesheet" href="css/about.css"/>
+    {% endblock %}
+	
+	{% block about %}
+	
+	<div class="about" id="about">
+		<div class="about_text">
+			<div class="about_roran_text">
+				<h1>About Roran<span>.</span></h1>
+				<h2>Creative Studio</h2>
+				<div class="about_border"></div>
+				<h3>Lorem impsum dolor sit amet,consectetur adipisicing elit.<br>vulputate, vehicula nisi vitae,lobortis ante.Praesent sodales iaculis ultricies</h3>
+			</div>
+				
+		
+				<div class="about_some">
+					{% from "src/templates/layout/block/about_block.njk" import about_some_block %}
+					{{ about_some_block('images/icon_1.png','Some fancy', 'colors','Lorem impsum dolor sit amet,consectetur adipisicing elit.Integer at purus vulputate,vechila nisi vitae,lobortis anteLorem impsum dolor sit amet,consectetur adipisicing elit.Integer at purus vulputate,vechila nisi vitae,lobortis antLorem impsum dolor sit amet,consectetur adipisicing elit.Integer at purus vulputate,vechila nisi vitae,lobortis anteLorem impsum dolor sit amet,consectetur adipisicing elit.Integer at purus vulputate,vechila nisi vitae,lobortis anteLorem impsum dolor sit amet,consectetur adipisicing elit.Integer at purus vulputate,vechila nisi vitae,lobortis anteLorem impsum dolor sit amet,consectetur adipisicing elit.Integer at purus vulputate,vechila nisi vitae,lobortis anteeLorem impsum dolor sit amet,consectetur adipisicing elit.Integer at purus vulputate,vechila nisi vitae,lobortis anteLorem impsum dolor sit amet,consectetur adipisicing elit.Integer at purus vulputate,vechila nisi vitae,lobortis anteLorem impsum dolor sit amet,conseLorem impsum dolor sit amet,consectetur adipisicing elit.Integer at purus vulputate,vechila nisi vitae,lobortis anteLorem impsum dolor sit amet,consectetur adipisicing elit.Integer at purus vulputate,vechila nisi vitae,lobortis antectetur adipisicing elit.Integer at purus vulputate,vechila nisi vitae,lobortis ante.!!!!!') }}					
+					{{ about_some_block ('images/icon_2.png','Enough', 'coffee breaks','Lorem impsum dolor sit amet,consectetur adipisicing elit.Integer at purus vulputate,vechila nisi vitae,lobortis ante.') }}	
+					{{ about_some_block ('images/icon_3.png','A little bit of ', 'magic','Lorem impsum dolor sit amet,consectetur adipisicing elit.Integer at purus vulputate,vechila nisi vitae,lobortis ante.') }}	
+				</div>
+		</div>	
+	</div>
+		<div class="numbers">
+			<div class="numbers_block">							
+					{% from "src/templates/layout/block/Number_block_empty.njk" import about_numbers_block  %}
+					{{ about_numbers_block('images/icon_2.png','1085', 'Empty cups') }}	
+					{{ about_numbers_block('images/icon_smile.png','102', 'Happy client') }}
+					{{ about_numbers_block('images/icon_barbeque.png','25', 'HBBQ meetings') }}
+					{{ about_numbers_block('images/icon_alcohol.png','29', 'Cocktail parties') }}
+			</div>				
+		</div>
+			<div class="about_some__clients">
+				<div class="about_clients">
+					<p>Some of our clients<br>We ♡ every single one</p>
+				<div class="about_border"></div>
+						
+					<div class="about_clients__logo">
+						{% from "src/templates/layout/block/Clients.njk" import about_clients_block %}
+						{{ about_clients_block('images/logo_1.png') }}
+						{{ about_clients_block('images/logo_2.png') }}
+						{{ about_clients_block('images/logo_3.png') }}
+						{{ about_clients_block('images/logo_4.png') }}
+					</div>
+				</div>
+			</div>
+	{% endblock %}
+	

@@ -1,0 +1,123 @@
+/*mobile*/
+.about{
+	background-color: #fff;
+	width: 100%;	
+}
+.about_text{
+	margin: auto;
+	width: 360px;
+}
+
+.about_roran_text {
+	padding-top: 50px;
+	margin-top: 30px;
+	background-color: #fff;
+	color: #000;
+	border:1 px solid red;
+	width: 360px;
+	text-align: center;
+}
+.about_roran_text h1 {
+	font-size: 210%;
+}
+
+.about_roran_text h2{
+	font-size: 130%;
+	color: #989898;
+}
+
+
+.about_roran_text span{
+	color: #00A58F;
+}
+
+.about_roran_text h3{
+	color: #989898;
+	font-size: 90%;
+	font-weight: 400;
+	padding-top: 40px;
+}
+
+.about_some{
+	width: 360px;
+	display: flex;
+	flex-direction: row; 
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+.about_some_block{
+	width: 300px;
+	margin-left: 4px;
+	margin-right: 4px;
+	text-align: center;
+	flex-grow: 0;
+	margin-top: 60px;
+	margin-bottom: 30px;
+}
+
+.numbers{
+	background-color: #f0f0f0;
+	width: 100%;
+}
+.numbers_block {
+	justify-content: space-around;
+	width: 360;
+	margin: auto;
+	display: flex;
+	flex-direction: row; 
+	padding-top: 50px;
+	flex-wrap: wrap;
+		
+}
+
+.about_numbers_block {
+	width: 220px;
+	margin: 10px;
+	display:flex;
+	flex-direction: row; 
+}
+.about_numbers_text {
+	font-size: 120%;
+	margin-left:20px;
+	
+}
+.about_numbers_text h1{
+	color: #00A58F;
+}
+.about_numbers_text p{
+	color: #7B7B7B;
+}
+
+.about_some__clients{
+	width: 100%;
+	background-color:#00A58F;
+	height: 290px;
+}
+
+.about_clients {
+	width: 360px;
+	margin: auto;
+	text-align: center;
+	color: #F0F0F0;
+	font-size: 120%;
+	font-weight: 900;
+	margin-top: 55px;
+}
+
+.about_clients__logo{
+	width: 360px;
+	display: flex;
+	flex-direction: row; 
+	align-content: baseline;
+	margin-top: 58px;
+	height: 70px;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+.about_border{
+	border-bottom: 2px solid #F0F0F0;
+    font-weight: normal;
+    padding-bottom: 5px;
+	width: 105px;
+	margin-left: 37%;
+}

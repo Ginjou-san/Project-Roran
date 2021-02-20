@@ -1,0 +1,60 @@
+{% block styles %}
+	{{ super() }} 
+	<link rel="stylesheet" href="css/portfolio.css" />
+{% endblock %}
+
+{% block portfolio %}
+	<div class="portfolio" id="portfolio">
+		<div class="portfolio_text">
+			<h1>Portfolio</h1>
+			<h2>This is what we've been working on</h2>
+		</div>
+			<div class="portfolio_menu">
+				<ul>
+					<li data-filter=".web" onclick="Filter('.web'); active(); this.classList.add('active'); ">Web</li>
+					<li data-filter=".web" onclick="Filter('.digital-art'); active(); this.classList.add('active');">Digital Art</li>
+					<li data-filter=".web" onclick="Filter('.illustrators'); active(); this.classList.add('active');">Illustrators</li>
+					<li data-filter=".web" onclick="Filter('.branding'); active(); this.classList.add('active');">Branding</li>
+					<li data-filter="*" class="active" onclick="Filter('*'); active(); this.classList.add('active');">All</li>
+				</ul>
+			</div>
+	</div>
+		<div class="portfolio_content">
+			<div class="portfolio_content__text">
+				{% from "src/templates/layout/block/portfolio_blocks.njk" import portfolio_image %}
+					{{ portfolio_image('web',  '', '') }}
+					{{ portfolio_image('branding',  '', '') }}
+					{{ portfolio_image('illustrators',  '', '') }}
+					{{ portfolio_image('digital-art',  '', '') }}
+					{{ portfolio_image('web',  '', '') }}
+					{{ portfolio_image('branding',  '', '') }}
+					{{ portfolio_image('illustrators',  '', '') }}
+					{{ portfolio_image('digital-art',  '', '') }}
+					{{ portfolio_image('web',  '', '') }}
+			</div>
+		</div>	
+{% endblock %}
+
+{% block scripts %}
+	{{ super() }} 
+	<script src="script\isotope.js"></script>
+	<script>
+	
+		var elem = document.querySelector('.portfolio_content');
+		var iso = new Isotope( elem, {
+		  // options
+		  itemSelector: '.portfolio_image',
+		  layoutMode: 'fitRows'
+		});
+		
+		function Filter(param) {
+			iso.arrange({ filter: param });
+		}
+	</script>
+	<script>
+	function active() {
+		var current = document.getElementsByClassName("active");
+		current[0].className = current[0].className.replace("active", "");
+	} 
+	</script>
+{% endblock %}

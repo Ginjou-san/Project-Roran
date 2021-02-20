@@ -1,0 +1,107 @@
+/*laptop */
+.about {
+  background-color: #fff;
+  width: 100%; }
+
+.about_text {
+  margin: auto;
+  width: 640px; }
+
+.about_roran_text {
+  padding-top: 50px;
+  margin-top: 30px;
+  background-color: #fff;
+  color: #000;
+  border: 1 px solid red;
+  width: 640px;
+  text-align: center; }
+
+.about_roran_text h1 {
+  font-size: 300%; }
+
+.about_roran_text h2 {
+  font-size: 200%;
+  color: #989898; }
+
+.about_roran_text span {
+  color: #00A58F; }
+
+.about_roran_text h3 {
+  color: #989898;
+  font-size: 120%;
+  font-weight: 400;
+  padding-top: 40px; }
+
+.about_some {
+  width: 640px;
+  display: flex;
+  flex-direction: row; }
+
+.about_some_block {
+  width: 300px;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  flex-grow: 0; }
+
+.numbers {
+  background-color: #f0f0f0;
+  width: 100%; }
+
+.numbers_block {
+  width: 640px;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  padding-top: 50px; }
+
+.about_numbers_block {
+  width: 220px;
+  margin: 10px;
+  display: flex;
+  flex-direction: row; }
+
+.about_numbers_text {
+  font-size: 120%;
+  margin-left: 20px; }
+
+.about_numbers_text h1 {
+  color: #00A58F; }
+
+.about_numbers_text p {
+  color: #7B7B7B; }
+
+.about_some__clients {
+  width: 100%;
+  background-color: #00A58F;
+  height: 350px; }
+
+.about_clients {
+  width: 640px;
+  margin: auto;
+  text-align: center;
+  color: #F0F0F0;
+  font-size: 120%;
+  font-weight: 900;
+  padding-top: 70px;
+  height: 348px; }
+
+.about_clients__logo {
+  display: flex;
+  flex-direction: row;
+  align-content: baseline;
+  margin-top: 45px;
+  height: 70px;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+
+.about_border {
+  border-bottom: 2px solid #F0F0F0;
+  font-weight: normal;
+  padding-bottom: 5px;
+  width: 105px;
+  margin-left: 45%; }
