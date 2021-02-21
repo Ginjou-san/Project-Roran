@@ -3,12 +3,12 @@
 	width: 100%;
 	background-color: #ffff;
 	position: relative;
+	padding: 50px 10px;
 }
 
 .team_text{
 	margin: auto;
 	width: 640px;
-	height: 200px;
 }
 
 .triangle {
@@ -66,10 +66,10 @@
 .team_block {
 	margin: auto;
 	background-color: #39A38F;
-	height: 300px;
 	width: 300px;
 	display: flex;
 	flex-direction: column;
+	padding-top: 230px;
 }
 
 .team_block h2 {
@@ -82,7 +82,6 @@
 
 .team_block__tittle {
 	background-color: #ffff;
-	height: 75px;
 	width: 100%;
 	padding: 5px;
 	margin-bottom: 3px;

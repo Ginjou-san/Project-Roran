@@ -27,7 +27,7 @@ body{
 }
 .header_logo{
 	margin:auto;
-	height: 450px;
+	margin-bottom: 100px;
 	width: $width;
 	color: #ffffff;
 	position: relative;
@@ -84,5 +84,4 @@ body{
 .header_arrow{
 	position: absolute;
 	left: 50%;
-	bottom: 70px;
 }

@@ -1,3 +1,5 @@
-{% macro portfolio_image(class,  tittle, text) %}
-	<div class="portfolio_image {{ class }}"><h4>{{ tittle }}</h4><br>{{ text }}</div>
+{% macro portfolio_image(class,image) %}
+	<div class="portfolio_image {{ class }}">
+		<img src="{{ image }}" ></img>
+		</div>
 {% endmacro %}

@@ -2,8 +2,8 @@
 .team{
 	width: 100%;
 	background-color: #ffff;
-	height: 200px;
 	position: relative;
+	padding: 50px 10px;
 }
 
 .team_text{
@@ -65,11 +65,11 @@
 
 .team_block {
 	margin: auto;
-	background-color: #39A38F;
-	height: 300px;
+	background-color: #39A38F;;
 	width: 300px;
 	display: flex;
 	flex-direction: column;
+	padding-top: 230px;
 }
 
 .team_block h2 {
@@ -82,7 +82,6 @@
 
 .team_block__tittle {
 	background-color: #ffff;
-	height: 75px;
 	width: 100%;
 	padding: 5px;
 	margin-bottom: 3px;

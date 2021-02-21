@@ -41,7 +41,8 @@
 .about_some{
 	width: 960px;
 	display: flex;
-	flex-direction: row; 
+	flex-direction: row;
+	padding-bottom: 90px;
 }
 .about_some_block{
 	width: 300px;
@@ -84,9 +85,8 @@
 }
 
 .about_some__clients{
-		width: 100%;
-		background-color:#00A58F;
-		height: 350px;
+	width: 100%;
+	background-color:#00A58F;
 }
 
 .about_clients {
@@ -97,7 +97,7 @@
 	font-size: 120%;
 	font-weight: 900;
 	padding-top: 70px;
-	height: 348px;
+	padding-bottom: 80px;
 }
 
 .about_clients__logo{
